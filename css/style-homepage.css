@@ -6,9 +6,6 @@ body {
 
 /* **Tela de perfil do Professor** */
 .info-professor {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   border: 2px solid black;
   padding-top: 40px;
   list-style: none;

@@ -1,0 +1,36 @@
+.layout-perfil-prof{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.caixa-segura-layout, .segura-data-nascimento, .documento-pessoal, .genero{
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 900px;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.info-contato{
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  border: 2px solid grey;
+  padding: 10px;
+  border-radius: 5px;
+  width: 900px;
+}
+
+
+.box-email, .box-telefone{
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 900px;
+  justify-content: space-around;
+  align-self: center;
+}
