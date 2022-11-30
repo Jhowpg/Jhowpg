@@ -1,10 +1,15 @@
-.layout-perfil-prof{
+/* **Estilização do layout** */
+.layout-perfil-prof {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
 }
 
-.caixa-segura-layout, .segura-data-nascimento, .documento-pessoal, .genero{
+.caixa-segura-layout,
+.segura-data-nascimento,
+.documento-pessoal,
+.genero,
+.box-email,
+.box-telefone {
   display: flex;
   flex-direction: row;
   background-color: #fff;
@@ -14,23 +19,59 @@
   align-self: center;
 }
 
-.info-contato{
-  display: flex;
-  flex-direction: column;
-  align-items: center ;
-  border: 2px solid grey;
+.segura-informacoe,
+.info-contato {
+  margin: 30px 0;
+  align-self: center;
+  border: 3px solid #060606;
   padding: 10px;
   border-radius: 5px;
-  width: 900px;
 }
 
-
-.box-email, .box-telefone{
-  display: flex;
-  flex-direction: row;
+.texto-turma {
   background-color: #fff;
   border-radius: 5px;
-  width: 900px;
+  padding: 5px;
+}
+
+.texto-info-conta,
+.texto-info {
+  margin-bottom: 20px;
+}
+
+/* **Estilização dos botões** */
+.buttons,
+.box-select {
+  display: flex;
+  flex-direction: row;
+}
+
+.box-select {
+  margin-top: 20px;
   justify-content: space-around;
-  align-self: center;
+}
+
+.buttons {
+  justify-content: center;
+}
+
+#turma {
+  border-radius: 5px;
+}
+
+.limpar:hover,
+.salvar:hover {
+  scale: 1.1;
+  transition: all 0.3s;
+}
+
+/* **Estilização texto** */
+.texto-info-basica {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.texto-exibicao {
+  font-weight: 400;
+  font-size: 20px;
 }
