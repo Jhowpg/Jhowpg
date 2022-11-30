@@ -1,0 +1,131 @@
+/* **Corpo** */
+body {
+  background-color: #a9c5e98f;
+}
+
+main {
+  width: 450px;
+  margin: 0 auto;
+}
+
+fieldset {
+  width: 432px;
+  box-shadow: 0 10px 40px #00000056;
+  background-color: #58a5e7e0;
+  border-radius: 20px;
+}
+
+.form-nome {
+  display: flex;
+  flex-direction: row;
+}
+
+#nome,
+#sobrenome {
+  margin-top: 15px;
+  width: 195px;
+  padding: 5px;
+  border-radius: 4px;
+  border: none;
+  /* background-color: #274a7e; */
+}
+
+input {
+  color: #fff;
+}
+
+input::placeholder {
+  color: #274a7e;
+}
+
+#sobrenome {
+  margin-left: 20px;
+}
+
+.email,
+.senha {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+#email,
+#senha {
+  border-radius: 4px;
+  padding: 5px;
+  border: none;
+  /* background-color: #274a7e; */
+}
+
+/* **Data de nascimento** */
+
+select {
+  border-radius: 4px;
+  padding: 5px;
+  /* background-color: #274a7e; */
+  color: #274a7e;
+  cursor: pointer;
+  border: none;
+}
+
+#dias,
+#mes,
+#year {
+  width: 125px;
+  margin: 0 6px;
+}
+
+.div-masculino,
+.div-feminino {
+  display: inline-block;
+  width: 105px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 3px;
+  margin: 10px 5px;
+  background-color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+label {
+  color: #274a7e;
+}
+
+button {
+  border-radius: 4px;
+  margin: 10px 0;
+  padding: 5px;
+  background-color: #247bd5e0;
+  padding: 10px;
+  color: #000;
+  cursor: pointer;
+}
+
+.botao {
+  display: flex;
+  justify-content: center;
+}
+
+/* **Estilização da imagem** */
+
+img {
+  width: 90px;
+}
+
+.image {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* **Texto** */
+h1,
+h4 {
+  color: #15171a;
+  font-weight: 800;
+}
+
+p {
+  font-weight: 600;
+}

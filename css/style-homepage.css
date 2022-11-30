@@ -1,0 +1,162 @@
+body {
+  background-color: #a9c5e98f;
+}
+
+/* **Home page** */
+
+/* **Tela de perfil do Professor** */
+.info-professor {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 2px solid black;
+  padding-top: 40px;
+  list-style: none;
+  background-color: #58a5e7e0;
+  border-radius: 15px;
+}
+
+.img-perfil {
+  display: flex;
+  justify-content: center;
+}
+
+.info-professor img {
+  width: 200px;
+  background-size: cover;
+  border: 2px solid white;
+  margin-bottom: 5%;
+  transition: all 0.3s;
+  -webkit-box-shadow: 1px 2px 13px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 2px 13px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 2px 13px -4px #f8f9fa;
+  height: 200px;
+}
+.info-professor img:hover {
+  scale: 1.1;
+}
+.segura-info {
+  margin: 10px 0;
+  -webkit-box-shadow: 1px 2px 13px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 2px 13px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 2px 13px -4px rgba(0, 0, 0, 0.75);
+}
+
+.info-professor p,
+li {
+  color: #000;
+  font-weight: 600;
+  list-style: none;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.justify {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px 5px;
+}
+
+.endereco {
+  text-align: center;
+}
+
+.buttons {
+  display: inline-block;
+  margin: 20px auto;
+}
+
+.buttons button {
+  margin: 0 30px;
+}
+
+/* **Tela dos Recados** */
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* **Estilização tela Recado** */
+.multiselect {
+  width: 163px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+}
+
+#checkboxes label {
+  display: block;
+}
+
+#checkboxes label:hover {
+  background-color: #1e90ff;
+}
+
+input,
+label {
+  display: inline-block;
+}
+
+.assunto-label,
+.data-label,
+.descricao-label,
+.nome-label,
+.upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-weight: 600;
+}
+
+.upload {
+  margin-top: 20px;
+}
+
+.multiselect {
+  margin: 10px auto;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+button {
+  margin: 10px;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #0d6efd;
+  font-weight: 600;
+  border: none;
+  padding: 4px 20px;
+}
+
+img {
+  width: 50px;
+}
