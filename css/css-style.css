@@ -1,0 +1,200 @@
+/* TELA DE PROFESSOR E ALUNO */
+.info-professor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  padding-top: 40px;
+  background-image: linear-gradient(
+      to left top,
+      #292c32,
+      #3f4247,
+      #56595e,
+      #6e7176,
+      #878a8e
+    );
+}
+.info-professor img {
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  border: 2px solid white;
+  margin-bottom: 5%;
+  transition: all 0.3s;
+  -webkit-box-shadow: 1px 2px 13px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 2px 13px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 2px 13px -4px rgba(0, 0, 0, 0.75);
+}
+.info-professor img:hover {
+  scale: 1.1;
+}
+.segura-info {
+  margin: 10px 0;
+  -webkit-box-shadow: 1px 2px 13px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 2px 13px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 2px 13px -4px rgba(0, 0, 0, 0.75);
+}
+.info-professor label {
+  color: #1da1f2;
+}
+
+.info-professor p, li {
+  color: #f5f6f7;
+  text-align: center;
+}
+
+  /* Tela recados de Alunos */
+
+.titulo{
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  font-size: 50px;
+}
+
+.recados{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.recados fieldset{
+  border: #292c32 1px solid;
+  background-color: rgb(245, 151, 151);
+  margin: 10px 10px;
+  width: 200px;
+  padding: 10px 10px;
+  box-shadow: 1px 2px 13px -4px #46abf9;
+  cursor: pointer;
+}
+
+.recados fieldset.lido{
+  background-color: rgba(165, 248, 157, 0.811);
+ 
+}
+
+
+.recados fieldset:hover{
+  scale: 1.1;
+  transition: all 0.3s;
+}
+
+.recados p span{
+  font-weight: 800;
+}
+
+input{
+  width: 20px;
+  height: 20px;
+}
+
+label{
+  font-size: 18px;
+}
+
+.recados fieldset .enviado {
+  font-size: 13px;
+  color: #000000;
+  background-color: #9fd4f5c7;
+}
+
+/* CSS FAQ */
+.titulo-faq {
+  font-size: 6em;
+}
+.lista-faq dt {
+  margin-top: 30px;
+  font-size: 1.9rem;
+  cursor: pointer;
+  color: #222;
+}
+.lista-faq dt::before {
+  content: "";
+  width: 20px;
+  height: 5px;
+  background-color: #222;
+  display: inline-flex;
+  margin-right: 15px;
+  border-radius: 3px;
+}
+.lista-faq dt::after {
+  content: "\27AA";
+  display: inline-block;
+  margin-left: 15px;
+}
+.lista-faq dt.ativo::after {
+  content: "\27AA";
+  width: auto;
+  display: inline-block;
+  margin-left: 15px;
+  transform: rotate(90deg);
+}
+.lista-faq dd {
+  margin-top: 15px;
+  display: none;
+  transition: 0.3s ease-in-out;
+  font-size: 1.9rem;
+}
+.lista-faq dd span {
+  color: black;
+  font-weight: bold;
+}
+
+dd.ativa-faq {
+  display: block !important;
+
+  animation: slideInDown 1s forwards;
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    max-height: 200px;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.ajuda {
+  
+ max-height: 100%;
+ margin: 100px 0;
+
+}
+.colteste1{
+  width: 85.666667%;
+}
+.colteste2{
+  width: 13.333333%;
+}
+
+.ajudaAluno {
+  height: 58.9vh;
+  margin: 100px 0;
+}
+
+.bt-topo{
+  color:rgba(255,255,255,.6);
+}
+.bt-topo:hover{
+  color:rgba(255, 255, 255, 0.801);
+}
+.ajudaProfessor {
+  height: 58.9vh;
+  margin: 100px 0;
+} 
+
+/* Footer */
+
+.zekinha{
+  background: #98a0a0 !important;
+}
+
+footer .zoka{
+  background: #000000 !important;
+}

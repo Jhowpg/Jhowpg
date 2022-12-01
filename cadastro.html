@@ -203,26 +203,35 @@
           <option value="1905">1905</option>
         </select>
         <p>Gênero</p>
-        <div class="div-feminino">
-          <label for="feminino">Feminino</label>
-          <input type="radio" name="feminino" id="feminino" />
+        <div class="layout-genero">
+          <div class="div-feminino">
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="masculinoFemino" id="feminino" />
+          </div>
+          <div class="div-masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="masculinoFemino" id="masculino" />
+          </div>
         </div>
-        <div class="div-masculino">
-          <label for="masculino">Masculino</label>
-          <input type="radio" name="masculino" id="masculino" />
+        <div class="layout-aluno-prof">
+          <select name="aluno-prof" id="aluno-prof">
+            <option value="0">Aluno ou Professor</option>
+            <option value="1">Professor</option>
+            <option value="2">Aluno</option>
+          </select>
         </div>
-        <select name="aluno-prof" id="aluno-prof">
-          <option value="0">Aluno ou Professor</option>
-          <option value="1">Professor</option>
-          <option value="2">Aluno</option>
-        </select>
         <div class="botao">
-          <button type="submit" onclick=" cadastrar()">Cadastre-se</button>
+          <button class="btn" type="submit" onclick="cadastrar()">
+            Cadastre-se
+          </button>
         </div>
       </fieldset>
     </main>
     <div class="image">
-      <img src="img/logoACPE.png" alt="" />
+      <a href="login.html">
+        <img src="img/logoACPE.png" alt="" />
+      </a>
     </div>
+    <script src="js/castro.js"></script>
   </body>
 </html>

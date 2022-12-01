@@ -1,0 +1,104 @@
+.calendario {
+    background-color: #fff;
+    margin-top: 15px;
+    /* max-width: 450px; */
+    border-radius: 10px;
+    padding: 30px 40px 40px 10px;
+    z-index: -5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.225em;
+  }
+  .calendario h2 {
+    text-align: center;
+    padding: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .calendario ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .calendario ul li {
+    width: calc(100% / 7);
+    margin: 15px 0;
+    text-align: center;
+    list-style: none;
+    color: black;
+  }
+
+  .ano {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ano span {
+    margin: 10px;
+    font-weight: bold;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: #f2f2f2;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #969696;
+    transition: 0.2s ease-in;
+  }
+  .ano span:hover {
+    transform: scale(1.2);
+    font-size: 20px;
+  }
+  .inativa {
+    color: #c1bfbf !important;
+  }
+  .dias li {
+    position: relative;
+    z-index: 6;
+    cursor: pointer;
+  }
+  .dias li:hover::before {
+    content: "";
+  
+    width: 40px;
+    position: absolute;
+    height: 40px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  .ativa{
+  position: relative;
+  }
+  .ativa::before{
+    content: "";
+    width: 40px;
+    position: absolute;
+    height: 40px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  .button{
+    border-radius: 50%;
+    padding: 10px 15px;
+    border: 0;
+    cursor: pointer;
+    margin: 0 15px;
+    transition: all .5s ease;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .button:hover{
+  transform: scale(1.2);
+  }
+  .week li:nth-child(1),.week li:nth-child(7) {
+    color: red;
+  }
+
+  .calendario h1{
+    text-align: center;
+  }
+  
+  

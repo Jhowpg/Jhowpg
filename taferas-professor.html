@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ACPE</title>
+    <title>Tarefas</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style-homepage.css" />
+    <link rel="stylesheet" href="css/tarefas-professor.css" />
   </head>
   <body>
     <!-- Cabeçalho -->
@@ -24,28 +25,88 @@
         >
           <span class="fs-3"><img src="/img/logoACPE.png" alt="" /></span>
         </a>
-
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a href="index.html" class="nav-link active" aria-current="page"
-              >Home</a
-            >
+            <a href="index-professor.html" class="nav-link" aria-current="page">Home</a>
           </li>
           <li class="nav-item">
             <a href="perfil-professor.html" class="nav-link">Perfil</a>
           </li>
           <li class="nav-item">
-            <a href="recado.html" class="nav-link">Recados</a>
+            <a href="recado-professor.html" class="nav-link">Recados</a>
           </li>
           <li class="nav-item">
-            <a href="taferas.html" class="nav-link">Tarefas</a>
+            <a href="taferas-professor.html" class="nav-link active" aria-current="page"
+              >Tarefas</a
+            >
           </li>
-          <li class="nav-item"><a href="#" class="nav-link">Ajuda</a></li>
+          <li class="nav-item">
+            <a href="galeria-prof.html" class="nav-link">Galeria</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Ajuda</a>
+          </li>
+          <li class="nav-item">
+            <a href="login.html" class="nav-link">Logout</a>
+          </li>
         </ul>
       </header>
     </div>
     <!-- Fim do cabeçalho -->
-
+    <main>
+      <div class="container">
+        <div class="content">
+          <form>
+            <fieldset>
+              <div class="assunto-label">
+                <label for="assunto">Assunto:</label>
+                <input type="text" name="assunto" id="assunto" />
+              </div>
+              <div class="data-label">
+                <label for="data">Data:</label>
+                <input type="date" name="data" id="data" />
+              </div>
+              <div class="upload">
+                <input type="file" name="arquivo" id="arquivo" />
+              </div>
+              <div class="multiselect">
+                <div class="selectBox" onclick="showCheckboxes()">
+                  <select>
+                    <option>Selecionar a turma</option>
+                  </select>
+                  <div class="overSelect"></div>
+                </div>
+                <div id="checkboxes">
+                  <label for="um">
+                    <input type="checkbox" id="um" />1ª - A</label
+                  >
+                  <label for="dois">
+                    <input type="checkbox" id="dois" />1ª - B</label
+                  >
+                  <label for="tres">
+                    <input type="checkbox" id="tres" />1ª - C</label
+                  >
+                  <label for="quatro">
+                    <input type="checkbox" id="quatro" />2ª - A</label
+                  >
+                  <label for="cinco">
+                    <input type="checkbox" id="cinco" />2ª - B</label
+                  >
+                  <label for="seis">
+                    <input type="checkbox" id="seis" />2ª - C</label
+                  >
+                </div>
+              </div>
+              <div class="botoes">
+                <button type="submit" onclick="enviarTarefas()">Enviar</button>
+                <button type="reset">Limpar</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </main>
     <!-- Inicio do rodapé -->
     <div class="container">
       <footer
@@ -64,7 +125,7 @@
 
         <ul class="nav col-md-4 justify-content-end">
           <li class="nav-item">
-            <a href="index.html" class="nav-link px-2 text-muted">Home</a>
+            <a href="index-professor.html" class="nav-link px-2 text-muted">Home</a>
           </li>
           <li class="nav-item">
             <a href="perfil-professor.html" class="nav-link px-2 text-muted"
@@ -72,10 +133,10 @@
             >
           </li>
           <li class="nav-item">
-            <a href="recado.html" class="nav-link px-2 text-muted">Recados</a>
+            <a href="recado-professor.html" class="nav-link px-2 text-muted">Recados</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-muted">Tarefas</a>
+            <a href="taferas-professor.html" class="nav-link px-2 text-muted">Tarefas</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link px-2 text-muted">Ajuda</a>
@@ -101,6 +162,8 @@
       integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
       crossorigin="anonymous"
     ></script>
+    <script src="js/recado.js"></script>
+    <script src="js/tarefas-prof.js"></script>
     <!-- Fim do script -->
   </body>
 </html>

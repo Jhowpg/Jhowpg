@@ -1,0 +1,66 @@
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    font-size: 50px;    
+}
+
+.kanban .column .titulo-atitivade{
+    font-size: 20px;
+    font-weight: 800;
+}
+.kanban{
+    display: flex;
+    justify-content: center;
+    min-height: 400px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background: #58a5e7e0;
+    border-radius: 5px;
+    height: 100%;
+    width: 250px;
+}
+
+.item{
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    pointer-events: none;
+}
+
+.dragging{
+    opacity: 0.5;
+}
+
+.gap-v-16{
+    row-gap: 16px;
+}
+
+.titulo-atitivade1{
+    background-color: rgba(241, 110, 110, 0.945);
+    color: black;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: 600;
+}
+
+.titulo-atitivade2{
+    background-color: #f5e569;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: 600;
+}
+
+.titulo-atitivade3{
+    background-color: rgba(147, 197, 109, 0.988);
+    color: black;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: 600;
+}
