@@ -132,16 +132,6 @@ button:hover {
 
 /* **Estilização da imagem** */
 
-img {
-  width: 90px;
-}
-
-.image {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-
 /* **Texto** */
 h1,
 h4 {
@@ -151,4 +141,27 @@ h4 {
 
 p {
   font-weight: 600;
+}
+
+.home ul li a{
+  text-decoration: none;
+  cursor: pointer;
+}
+.home ul li{
+  list-style: none;
+  font-weight: 600;
+}
+
+/* **Img** */
+
+/* **rodapé** */
+footer{
+  width: 450px;
+  margin: 0 auto;
+}
+
+.layout-footer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }

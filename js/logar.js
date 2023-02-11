@@ -4,10 +4,10 @@ function logar(){
     console.log(login)
 
     if(login == "professor" && senha == 123){
-        alert('Bem vindo a sua area de trabalho, professor!')
+        alert('Bem vindo a sua área de trabalho, professor!!')
         location.href = "index-professor.html"
     }else if(login == "aluno" && senha == 456){
-        alert('Bem vindo a sua area de estudo, aluno!')
+        alert('Bem vindo a sua área de estudos, aluno!!')
         location.href = "index-aluno.html"
     }else{
         alert('Usuario ou senha incorreto')
